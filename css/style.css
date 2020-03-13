@@ -1,0 +1,668 @@
+@font-face{
+	font-family: 'Courgette';
+	src: url('../css/fonts/Courgette-Regular.ttf');
+}
+@font-face{
+	font-family: 'Bangers';
+	src: url('../css/fonts/Bangers-Regular.ttf');
+}
+@font-face{
+	font-family: 'Montserrat';
+	src: url('../css/fonts/Montserrat-Regular.ttf');
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	box-sizing: border-box;
+}
+
+	.home .homelink, .bmenu .menulink, .blog .bloglink, .about .aboutlink {
+		color: #C29458;
+	}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	/*position: relative;*/
+}
+
+/*------------HEADER------------*/
+header{
+	width: 100%;
+	/*height: 292px;*/
+	height: 250px;
+	background: url(../img/zerna2.1.jpg) no-repeat center;
+	/*background: url(../img/goodmorning1.2.jpg) no-repeat center;	*/
+	background-size: cover;
+	position: relative;
+	margin: 0 auto;
+}
+
+#lang {
+	position: relative;
+}
+
+	#lang #en {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		z-index: 100;
+	}
+	#lang #ua {
+		position: absolute;
+		top: 5px;
+		right: 50px;
+		z-index: 100;
+	}
+
+.section {
+	padding-top: 40px;
+}
+
+	.logo {
+		
+		align-self: center;
+		background: #333;
+		border-radius: 50%;
+		text-align: center;
+		padding: 10px;
+	}
+
+	.logo a img{
+		/*position: absolute;*/
+		width: 150px;
+		/*height: 150px;*/
+		/*top: 15px;*/
+		/*left: 15px;*/
+	}
+
+.nav {
+	width: 80%;
+	height: 100px;
+	display: flex;
+	background: #333; 
+	border-radius: 90px;	
+	justify-content: space-around;
+	margin: 2rem auto;
+	font-size: 1.4rem;
+}
+
+	.nav a{
+		align-self: center;
+		color: white;
+		text-decoration: none;
+		font-size: 2rem;
+	}
+
+		.nav a:hover {
+			color: grey;
+		}
+
+	p.love {
+		color: white;
+		text-align: center;
+		margin-top: 50px;
+		text-transform: uppercase;
+		font-size: 1.7rem;
+		font-family: 'Montserrat';
+	}
+
+	#en {
+		background: url(../img/en.png);
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+	}
+
+	#ua {
+		background: url(../img/ua.png);
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+	}
+
+/*------------ARTICLE------------*/
+article {
+	display: flex;
+	justify-content: space-between;
+	background: #F5F2EB;
+	padding-bottom: 40px;
+}
+
+	.coffee-cookies {
+		margin-top: 50px;
+		flex-basis: 15%;
+	}
+
+	.coffeezerna {
+		padding-top: 300px;
+		flex-basis: 15%;
+	}
+
+	.coffeemenu {
+		display: flex;
+		justify-content: space-between;
+		flex-basis: 70%;
+		padding: 0 3%;
+	}
+
+		.coffee .h2_zerno {
+			text-align: center;
+		}
+
+		.cups{
+			display: flex;
+			flex-direction: column;
+			flex-basis: 47%;
+		}
+
+		.cups>div {
+			display: flex;
+
+		} 
+
+		.cups .grey{
+			color: grey;
+			font-size: 1.4rem;
+		}
+
+	h2 {
+		padding-top: 30px;
+		text-align: center;
+		font-size: 2.5rem;
+		margin: 0;
+	}
+
+	.d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8 {
+		flex-basis: 35%;
+		margin-bottom: 25px;
+		position: relative;
+		align-self: center;
+	}
+	.p {
+		flex-basis: 65%;
+		display: flex;
+		flex-direction: column;
+	}
+
+		.p p:first-child{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: unset;
+		}
+
+		.cups p {
+		font-size: 1.8rem;
+		}
+
+	.sale {
+		position: absolute;
+		top: 35px;
+		left: -20px;
+		width: 70px;
+	}
+
+		.price {
+			font-weight: bold;
+			color: #C29458;
+		}
+
+		.coffee-cookies {
+			background: url('../img/coffee-cookies.png') no-repeat 0 0 ; 
+			background-size: 90%;
+		}
+
+/*------------Today's Choice------------*/
+ .todaysChoice {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+ 	align-items: flex-end;
+ 	background: #F5F2EB;
+ 	font-size: 1.6rem;
+ }
+
+	 .todaysChoice p {
+	 	text-align: center;
+	 }
+
+ h3 {
+		text-align: center;
+		background: #F5F2EB;
+		margin: 0;
+		padding-top: 20px;
+		text-transform: uppercase;
+		font-size: 2rem;
+}
+
+/*------------ASIDE------------*/
+ aside {
+	background: url(../img/zernapluscup2.jpg) no-repeat;
+	background-size: 100%;
+	width: 100%;
+	padding-top: 24%;
+}
+	aside p {
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.7vw;
+	}
+
+	aside p:first-child {
+		margin: -17% auto 0 40%;
+	}
+
+	aside p:last-child {
+		margin: 3% auto 0 40%;
+	}
+
+
+.dd {
+	background: url(../img/zerna2.1.jpg) no-repeat;
+	background-size: cover;
+	height: 100px;
+}
+ 
+
+/*------------FOOTER------------*/
+footer {
+	background: #333;
+	color: white;
+	position: relative;
+	margin: 0 auto;
+}
+	
+	.copy {
+		padding-bottom: 10px;
+		text-align: center;
+		font-size: 1.2rem;
+	}
+
+	footer .nav {
+		height: 30px;
+	}
+
+	footer ul {
+		margin: 0 auto;
+		padding: 0;
+		height: 30px;
+		list-style-type: none;
+	}
+
+		footer ul li {
+			float: left;
+		}
+
+			footer .nav ul li a {
+				padding: 0 5px 0 8px;
+				text-decoration: none;
+				font-size: 1.3rem;
+			}
+
+				footer ul li a:hover {
+					text-decoration: underline;
+				}
+
+	.soc-icons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		padding-right: 10px;
+		padding-top: 10px;
+	}
+
+	.soc-icons a {
+		display: block;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #92969a;
+		margin-left: 10px;
+		text-align: center;
+		line-height: 4rem;
+		transition: all 0.5s ease;
+	}
+
+		.soc-icons .facebook:hover {
+			opacity: 0.5;
+			background: #3b5998;
+		}
+
+		.soc-icons .youtube:hover {
+			opacity: 0.5;
+			background: #c4302b; 
+		}
+
+		.soc-icons .telegram:hover {
+			opacity: 0.5;
+			background: #31A8E0; 
+		}
+
+		.soc-icons .instagram:hover {
+			opacity: 0.5;
+			background: #CD2C85;
+		}
+
+	.soc-icons i {
+		color: black;
+		font-size: 2rem;
+	}
+
+
+/*------------UP------------*/
+	.up {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		background: #333;
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+	}
+
+	.up i {
+		font-size: 30px;
+		text-align: center;
+		line-height: 40px;
+		color: #fff;
+	}
+
+/*------------UBOUT US------------*/
+
+.info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background: #F5F2EB;
+	font-size: 1.7rem;
+}
+
+	#qr {
+		width: 250px;
+		height: 250px;
+		/*background: #bbb;*/
+		
+	}
+
+	.working_hours ul {
+		list-style-type: none;
+	}
+
+		.working_hours ul li {
+			line-height: 2.5rem;
+		}
+
+/*------------BLOG------------*/
+.blog_article {
+	display: flex;
+	flex-direction: column;
+	background: #F5F2EB;
+}
+
+	.blog_article div {
+		margin: 10px 0;
+		font-size: 1.6rem;
+	}
+
+		h4 {
+			font-size: 2rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		.blog_article div p{
+			text-align: justify;
+			padding: 0px 20px;
+			font-family: Arial;
+		}
+
+	.blog_article img {
+		float: left;
+		padding: 10px;
+	}
+
+		.more1, .more2, .more3, .more4, .more5 {
+			display: none;
+			font-family: Arial;
+		}
+
+		button {
+			background: brown;
+		}
+
+/*------------MENU------------*/
+.store {
+	background: #F5F2EB;
+}
+	
+.chooce {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 1.8rem;
+	padding-bottom: 40px;
+}
+
+.chooce>div {
+	margin: 0 6.5%;
+	padding: 1%; 
+	/*width: 30%;*/
+}
+
+.fa-star, .fa-star-half-alt {
+	color: #C29458;
+}
+
+#line {
+	border: none; 
+    background-color: #C29458; 
+    color: #C29458; /* Цвет линии для IE6-7 */
+    height: 2px;
+    width: 200px; 
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+.line2 {
+	height: 1px;
+	border: none; 
+    width: 100%; 
+    background-color: #C29458; 
+}
+
+
+/*for mobile*/
+
+#logo, .menu, .trigger {
+	display: none;
+}
+  
+
+/*------------MEDIA------------*/
+
+@media (min-width: 576px) and (max-width: 768px) {
+		body {
+			width: 100%;
+		}
+
+		.coffee-cookies,  .coffeezerna{
+			display: none;
+		}
+
+		.coffeemenu .cups1 {
+			margin-right: 0px;
+		}
+
+		div.nav {
+			width: 80%;
+			height: 70px;
+			/*margin: 10px auto;*/
+		}
+
+			.nav a {
+				font-size: 1.6rem;
+			}
+
+		.logo {
+			left: 250px;
+			width: 140px;
+			height: 140px;
+		}
+
+			.logo a img{
+				width: 130px;
+				height: 130px;
+				top: 5px;
+				left: 5px;
+			}
+
+		p.love {
+			margin-top: 80px;
+			font-size: 1.3rem;
+		}
+
+		.todaysChoice {
+			display: flex;
+			flex-direction: row;
+  			flex-wrap: wrap;
+		}
+
+		.todaysChoice>div {
+			flex-shrink: 1;
+		}
+
+		article {
+			justify-content: center;
+		}
+
+		.section {
+			margin: 10px auto;
+		}
+
+		footer div.nav {
+			height: 30px;
+			margin: 10px auto;
+			line-height: 30px;
+		}
+
+		.qr {
+			display: none;
+		}
+	}
+
+	@media  (max-width: 575px) {
+		.coffee-cookies,  .coffeezerna, .nav-header{
+			display: none;
+		}
+
+		 .coffeemenu {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.coffee {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 0 auto;
+		}
+
+		.todaysChoice {
+			display: flex;
+			flex-direction: row;
+  			flex-wrap: wrap;
+		}
+
+		/*hamburger*/
+
+	#menu {
+		list-style-type: none;
+	}
+
+		ul>li {
+			margin-bottom: 5px;
+		}
+
+			ul>li>a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 16px;
+			}
+
+	.trigger {
+		display: inline-block;
+		margin: 3px;
+		cursor: pointer;
+	}
+
+		.trigger i {
+			display: block;
+			width: 30px;
+			height: 4px;
+			margin: 4px auto;
+			background: #fff;
+			border-radius: 5px;
+		}
+
+	.show {
+		display: block;
+	}
+
+	.section {
+		margin-top: -30px;
+		margin-left: 15px;
+		display: inline-block;
+	}
+
+	#logo {
+		display: block;
+		position: absolute;
+		top: 10px;
+		left: 40%;
+		width: 90px;
+		height: 90px;
+	}
+
+	header {
+		height: 200px;
+	}
+
+	p.love {
+		font-size: 1.2rem;
+		position: absolute;
+		bottom: 10px;
+		left: 6%;
+	}
+
+	.qr {
+		display: none;
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.working_hours ul {
+		padding: 0;
+	}
+
+	.menu a:hover {
+			/*color: grey;*/
+			text-decoration: underline;
+		}
+
+	
+}
